@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-17T22:36:32.314Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="8KZev-c3XGZKUzbBixCu" version="20.8.14" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-17T22:40:04.479Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="a8jfMiFH76oMOr2zcQBA" version="20.8.14" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
     <mxGraphModel dx="1232" dy="1049" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -94,7 +94,7 @@
         <mxCell id="78961159f06e98e8-78" value="update_quotes(dates) -&amp;gt; dict[float]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="78961159f06e98e8-69" vertex="1">
           <mxGeometry y="190" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="HdD71s3ukf2rshn0cKgR-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERzeroToMany;startFill=0;endArrow=ERone;endFill=0;" edge="1" parent="1" source="78961159f06e98e8-82" target="HdD71s3ukf2rshn0cKgR-16">
+        <mxCell id="HdD71s3ukf2rshn0cKgR-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERzeroToMany;startFill=0;endArrow=ERzeroToOne;endFill=0;" edge="1" parent="1" source="78961159f06e98e8-82" target="HdD71s3ukf2rshn0cKgR-16">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="160" y="290" />
@@ -121,13 +121,15 @@
         <mxCell id="78961159f06e98e8-91" value="value(symbol, quantity) -&amp;gt; float" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="78961159f06e98e8-82" vertex="1">
           <mxGeometry y="112" width="160" height="38" as="geometry" />
         </mxCell>
-        <mxCell id="HdD71s3ukf2rshn0cKgR-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=0.444;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="78961159f06e98e8-95" target="78961159f06e98e8-43">
+        <mxCell id="HdD71s3ukf2rshn0cKgR-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=0.444;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="78961159f06e98e8-95" target="78961159f06e98e8-43">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="830" y="290" as="targetPoint" />
             <Array as="points">
               <mxPoint x="561" y="330" />
               <mxPoint x="830" y="330" />
-              <mxPoint x="830" y="270" />
+              <mxPoint x="830" y="290" />
+              <mxPoint x="833" y="290" />
+              <mxPoint x="833" y="270" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -272,12 +274,25 @@
         <mxCell id="HdD71s3ukf2rshn0cKgR-39" value="+ method(type): type" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="HdD71s3ukf2rshn0cKgR-34">
           <mxGeometry y="112" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="HdD71s3ukf2rshn0cKgR-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;" edge="1" parent="1" source="HdD71s3ukf2rshn0cKgR-40" target="78961159f06e98e8-43">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="HdD71s3ukf2rshn0cKgR-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="HdD71s3ukf2rshn0cKgR-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="793" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="620" />
+              <mxPoint x="670" y="620" />
+              <mxPoint x="670" y="320" />
+              <mxPoint x="830" y="320" />
+              <mxPoint x="830" y="290" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="HdD71s3ukf2rshn0cKgR-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;" edge="1" parent="1" source="HdD71s3ukf2rshn0cKgR-40">
+        <mxCell id="HdD71s3ukf2rshn0cKgR-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERzeroToMany;startFill=0;endArrow=ERzeroToOne;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="HdD71s3ukf2rshn0cKgR-40">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="770" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="310" />
+              <mxPoint x="770" y="310" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="HdD71s3ukf2rshn0cKgR-40" value="Bond" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
